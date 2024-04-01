@@ -1,12 +1,26 @@
-package product
+package application
 
-import "context"
+import (
+	"context"
+)
+
+type StoreInterface interface {
+	Store()
+}
 
 type Product struct {
-	repo ProductRepository
+	repo StoreInterface
+}
+
+func NewProduct(r StoreInterface) *Product {
+	return &Product{
+		repo: r,
+	}
 }
 
 func (p *Product) Save(ctx context.Context) error {
+
+	p.repo.Store()
 
 	return nil
 }

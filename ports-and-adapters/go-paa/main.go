@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"go-paa/internal/product/infra/rest"
+	"log"
+	"net/http"
+)
 
 func main() {
 
-	fmt.Println("hello world")
+	http.HandleFunc("/product", rest.AddProduct)
+
+	log.Fatal(http.ListenAndServe(":8099", nil))
 }
