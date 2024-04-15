@@ -10,9 +10,6 @@ int main(void) {
 
   char c;
 
-  //  for (fahr = LOWER; fahr <= UPPER; fahr = fahr + STEP)
-  //    printf("%3d %6.1f\n", fahr, (5.0 / 9.0 * (fahr - 32)));
-
   while ((c = getchar()) != EOF) {
     if (c == ' ') {
       ++blanks;
