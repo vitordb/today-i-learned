@@ -1,5 +1,5 @@
 
-A Heap is a complete inary tree data structure that satisfies the heap property: for every node the value of its children is less than or equal to its own value.
+A Heap is a complete binary tree data structure that satisfies the heap property: for every node the value of its children is less than or equal to its own value.
 
 Heaps are specially good for implementing priority queues, taking out the values with the highest priority.
 
