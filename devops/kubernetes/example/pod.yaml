@@ -1,0 +1,13 @@
+apiVersion: v1 ##versao da api que voce vai utilizar
+kind: Pod
+metadata:
+  name: meupod
+spec:
+  containers:
+    - name: web
+      image: kubedevio/web-color:blue
+      ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+
