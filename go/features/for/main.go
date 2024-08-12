@@ -13,4 +13,8 @@ func main() {
 		fmt.Println(animals[i])
 
 	}
+
+	for k, v := range animals {
+		fmt.Println(k, v)
+	}
 }
