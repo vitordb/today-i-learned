@@ -26,8 +26,24 @@ func main() {
 
 	fmt.Println(len(newArray))
 
+	//creating an empty slice
+	names2 := []string{}
+
+	fmt.Println(names2)
+
+	//using the make builtin function
+	s := make([]string, 3)
+	fmt.Println("emp", s, "len", len(s), "cap", cap(s))
+
+	//copying a slice into another slice
+	c := make([]string, 2)
+	copy(c, s)
+	fmt.Println("slice copiado", c)
+
 	//removing elements
-	newArray = append(newArray[:3], newArray[4:]...)
+	newArray = append(newArray[:1], newArray[2:]...)
 
 	fmt.Println(newArray)
+
+	//copy slice
 }
