@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -38,12 +40,11 @@ func main() {
 	//copying a slice into another slice
 	c := make([]string, 2)
 	copy(c, s)
-	fmt.Println("slice copiado", c)
+	fmt.Println("copied slice", c)
 
 	//removing elements
 	newArray = append(newArray[:1], newArray[2:]...)
 
 	fmt.Println(newArray)
 
-	//copy slice
 }
