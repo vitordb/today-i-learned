@@ -20,6 +20,21 @@ func main() {
 	//cloning slice
 	slice3 := []int{1, 2, 3}
 
-	fmt.Println(slice3Copy)
+	sliceCloned := slices.Clone(slice3)
+	fmt.Println("slice cloned", sliceCloned)
+
+	//return index
+	fmt.Println(slices.Index(slice3, 3))
+
+	//insert
+
+	sliceCloned = slices.Insert(sliceCloned, 2, 1, 2, 3, 4)
+	fmt.Println(sliceCloned)
+
+	//append with slice package
+	a := []int{1, 2, 3}
+	seq := slices.Values([]int{4, 5})
+	c := slices.AppendSeq(a, seq)
+	fmt.Println(c)
 
 }
