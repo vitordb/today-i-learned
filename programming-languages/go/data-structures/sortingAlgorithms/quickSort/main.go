@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"go-studies/data-structures/sortingAlgorithms/quickSort/qs"
 )
 
 // values é o array com os números, left é o índice da esquerda, right índice da direita
@@ -62,9 +61,6 @@ func main() {
 
 	// Exibe o array ordenado
 	fmt.Println("Array ordenado:", arr)
-
-	// chama quicksort2
-	qs.QuickSort2(arr, 0, len(arr2)-1)
 
 	fmt.Println("Array ordenado 2:", arr2)
 
