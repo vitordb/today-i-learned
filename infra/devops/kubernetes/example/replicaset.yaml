@@ -12,10 +12,10 @@ spec:
       labels:
         app: web0
     spec:
-     containers:
-     - name: meupod2
-       image: kubedevio/web-color:green
-       ports:
+      containers:
         - name: meupod2
-          containerPort: 80
-          protocol: TCP
+          image: kubedevio/web-color:green
+          ports:
+            - name: meupod2
+              containerPort: 80
+              protocol: TCP
